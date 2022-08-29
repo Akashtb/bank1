@@ -1,0 +1,26 @@
+<h1>{{header}}</h1>
+<div class="row">
+
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4" style="margin-top: 100px ;">
+       <div class="border container">
+            <h2 class="text-center text-warning">Login form</h2>
+            <form action="" class="border m-5 p-5" >
+                <div class="m-3">
+                    <input (change)="accnochange($event)" class="form-control" type="text" [placeholder]="accPlaceholder">
+                </div>
+                <div class="m-3">
+                    <input (change)="pswdchange($event)" class="form-control" type="password" placeholder="password">
+                </div>
+                <div class="m-3">
+                    <input (click)="login()" class="btn-btn-primary" type="button" value="Login" name="" id="loginBtn">
+                </div>
+            </form>
+
+       </div>
+       <div>
+        <label for="">Not a user? <a routerLink="register">register</a></label>
+       </div>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
